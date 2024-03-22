@@ -1,0 +1,22 @@
+.chat-bubble {
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    max-width: 60%;
+    word-wrap: break-word;
+  }
+  
+  .chat-bubble.own-message {
+    background-color: #09c;
+    border-radius: 20px 20px 0px 20px;
+    text-align: right;
+    align-self: flex-end;
+  }
+  
+  .chat-bubble:not(.own-message) {
+    background-color: #e5e5ea;
+    border-radius: 0px 20px 20px 20px;
+    text-align: start;
+    color: black;
+    align-self: flex-start;
+  }

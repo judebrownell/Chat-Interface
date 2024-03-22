@@ -1,0 +1,24 @@
+/* src/components/ChatSuggestions/ChatSuggestions.css */
+.chat-suggestion {
+    display: flex;
+    justify-content: center;  
+    position: fixed;           
+    bottom: 100px;              
+    width: 100%;               
+    z-index: 1000;             
+  }
+  
+  .suggestion {
+    background-color: #09c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;             
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .suggestion:hover {
+    background-color: #006080;
+  }
+  

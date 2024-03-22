@@ -1,0 +1,8 @@
+/* src/containers/ChatContainer/ChatContainer.css */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: calc(100vh - 180px);
+    padding-bottom: 1rem;
+}
