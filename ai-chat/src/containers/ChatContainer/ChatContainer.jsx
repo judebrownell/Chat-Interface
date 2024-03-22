@@ -1,4 +1,3 @@
-// src/containers/ChatContainer/ChatContainer.jsx
 import React, { useState, useRef, useEffect } from 'react';
 import ChatBubble from '../../components/ChatBubble/ChatBubble';
 import ChatInput from '../../components/ChatInput/ChatInput';
@@ -11,15 +10,13 @@ const ChatContainer = () => {
 
     const handleSendMessage = (newMessage) => {
         setMessages(messages => [...messages, { text: newMessage, isOwn: true }]);
-        // Scroll logic moved to the effect below
     };
 
     useEffect(() => {
         if (messages.length) {
-            // Only scroll if there are messages, and do so after the state update completes
             messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
         }
-    }, [messages.length]);  // Depend on messages.length to trigger scroll only when a new message is added
+    }, [messages.length]);
 
     return (
         <div className="chat-container">
